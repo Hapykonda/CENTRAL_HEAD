@@ -121,3 +121,36 @@ h2 {
     animation-play-state: paused;
 }
 
+@media (max-width: 768px) {
+    .productos-grid {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 18px; /* Aumenta el tamaño de la fuente base */
+    }
+    .navbar a, .navbar-secundaria a {
+        font-size: 18px; /* Aumenta el tamaño de las fuentes en la navegación */
+    }
+    .btn-comprar {
+        padding: 15px 25px; /* Aumenta el tamaño del botón */
+        font-size: 16px; /* Aumenta el tamaño de la fuente del botón */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar, .navbar-secundaria {
+        padding: 10px; /* Reduce el padding en las barras de navegación */
+    }
+    main {
+        padding: 15px; /* Reduce el padding en el contenido principal */
+        margin-top: 100px; /* Ajusta el margen superior para las barras fijas */
+    }
+    .producto {
+        padding: 15px; /* Reduce el padding en los productos */
+    }
+}
+
+
