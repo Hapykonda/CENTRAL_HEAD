@@ -157,3 +157,18 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('fornite.webp');
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); /* Valor actual del desenfoque */
+    z-index: -1;
+}
+
