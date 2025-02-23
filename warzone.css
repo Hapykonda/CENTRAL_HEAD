@@ -1,0 +1,42 @@
+.producto {
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.producto:focus {
+    border-color: #ffcc00; /* Color de borde personalizado */
+    outline: none;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ajusta el valor mínimo según tus necesidades */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .productos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .producto {
+        max-width: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+    .producto {
+        max-width: 100%;
+    }
+}
+
+
+.producto:focus {
+    outline: none;
+}
