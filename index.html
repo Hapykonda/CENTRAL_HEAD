@@ -5,7 +5,6 @@
     <title>Central Head - Productos</title>
     <style>
         /* Estilos generales */
-
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -13,7 +12,7 @@
             background-color: #1a1a1a;
             color: #fff;
         }
-        
+
         .productos-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -73,7 +72,7 @@
             display: inline-block;
             margin-top: 10px;
         }
-       
+
         body::before {
             content: "";
             position: absolute;
@@ -83,24 +82,18 @@
             height: 100%;
             background: url('fornite.png') no-repeat center center;
             background-size: cover;
-            filter: blur(8px); /* Ajusta el valor para más o menos desenfoque */
-            opacity: 0.5; /* Ajusta la opacidad según prefieras */
+            filter: blur(8px);
+            opacity: 0.5;
             z-index: -1;
         }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #1a1a1a; /* Fondo oscuro */
-            color: #fff; /* Texto blanco */
-        }
+
         /* Barra de notificación */
         .barra-notificacion {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #FFA500; /* Naranja */
+            background-color: #FFA500;
             color: #fff;
             padding: 10px 0;
             text-align: center;
@@ -108,7 +101,7 @@
             white-space: nowrap;
             overflow: hidden;
             box-sizing: border-box;
-            z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+            z-index: 1000;
         }
 
         .barra-notificacion p {
@@ -125,23 +118,24 @@
                 transform: translateX(-100%);
             }
         }
+
         /* Barra de navegación principal */
         .navbar {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start; /* Alinea a la izquierda */
             align-items: center;
             background-color: #333;
             padding: 10px 20px;
             position: fixed;
-            top: 40px; /* Debajo de la barra de notificación */
+            top: 40px;
             left: 0;
             width: 100%;
-            z-index: 999; /* Asegura que la barra esté por encima de otros elementos */
+            z-index: 999;
         }
 
         .navbar-brand {
             font-size: 24px;
-            color: #1e90ff; /* Azul brillante */
+            color: #1e90ff;
             text-decoration: none;
         }
 
@@ -162,39 +156,15 @@
             font-size: 16px;
         }
 
-        /* Barra de navegación secundaria */
-        .navbar-secundaria {
-            background-color: #444;
-            padding: 5px 20px;
-            margin-top: 80px; /* Espacio para las barras fijas */
-        }
-
-        .navbar-secundaria ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        .navbar-secundaria li {
-            margin-left: 20px;
-        }
-
-        .navbar-secundaria a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 14px;
-        }
-
         /* Contenedor de productos */
         main {
             padding: 20px;
-            margin-top: 120px; /* Espacio para las barras fijas */
+            margin-top: 120px;
         }
 
         h2 {
             text-align: center;
-            color: #1e90ff; /* Azul brillante */
+            color: #1e90ff;
         }
 
         /* Estilos de la cuadrícula de productos */
@@ -224,7 +194,7 @@
         }
 
         .producto h3 {
-            color: #1e90ff; /* Azul brillante */
+            color: #1e90ff;
             font-size: 18px;
             margin: 10px 0;
         }
@@ -237,26 +207,9 @@
         .precio {
             font-size: 16px;
             font-weight: bold;
-            color: #1e90ff; /* Azul brillante */
+            color: #1e90ff;
         }
 
-        /* Estilos del botón "Comprar" */
-        .btn-comprar {
-            background-color: #ff0000; /* Rojo */
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 14px;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-comprar:hover {
-            background-color: #cc0000; /* Rojo oscuro */
-        }
-
-        
         /* Modal */
         .modal {
             display: none;
@@ -298,19 +251,18 @@
             display: inline-block;
             margin-top: 10px;
         }
-        
-        
-        
+
     </style>
 </head>
 <body>
-
-    <div id="modal" class="modal">
+        <!-- Modal de Información -->
+<div id="modal" class="modal">
     <div class="modal-content">
         <span class="close" onclick="cerrarModal()">&times;</span>
         <p id="informacion-texto"></p>
     </div>
 </div>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilos.css">
 
@@ -325,18 +277,14 @@
         <nav class="navbar">
             <div class="navbar-brand">Central Head</div>
             <ul>
-                
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="warzone.html" class="btn">Zona Warzone</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Barra de navegación secundaria -->
-    <nav class="navbar-secundaria">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="warzone.html" class="btn">Zona Warzon</a></li>
-        </ul>
-    </nav>
+ 
     
     
 
@@ -364,124 +312,124 @@
         </div>
     </div>
 
-    <div class="producto">
-        <img src="2050.png" alt="Producto 2">
-        <h3>4,50$</h3>
-        <a href="http://t.me/happykondaa" class="btn-comprar">Comprar</a>
-        <a href="#" class="btn-comprar" onclick="mostrarInformacion('20-50[Acceso no completo] ✦ Cuenta con 200 a 500 aspectos - Epic Games ✦Cuenta sin acceso completoEntrega instantánea con correo electrónico y contraseña de la cuenta de Epic GamesAspectos aleatorios en la cuenta (200 aspectos garantizados)Cuenta de trabajo garantizadaOportunidad de obtener aspectos OG adicionales')">Información</a>
-        <div class="valoracion">
-            <label for="star1" class="star">&#9733;</label>
-            <label for="star2" class="star">&#9733;</label>
-            <label for="star3" class="star">&#9733;</label>
-            <label for="star4" class="star">&#9733;</label>
-            <label for="star5" class="star white-star">&#9733;</label>
-            <div id="rating-result">Valoración: 4,5</div>
-        </div>
+   <div class="producto">
+    <img src="2050.png" alt="Producto 2">
+    <h3>4,50$</h3>
+    <a href="http://t.me/happykondaa" class="btn-comprar">Comprar</a>
+    <a href="#" class="btn-comprar" onclick="mostrarInformacion('20-50[Acceso no completo] ✦ Cuenta con 200 a 500 aspectos - Epic Games ✦Cuenta sin acceso completoEntrega instantánea con correo electrónico y contraseña de la cuenta de Epic GamesAspectos aleatorios en la cuenta (200 aspectos garantizados)Cuenta de trabajo garantizadaOportunidad de obtener aspectos OG adicionales')">Información</a>
+    <div class="valoracion">
+        <label for="star1" class="star">&#9733;</label>
+        <label for="star2" class="star">&#9733;</label>
+        <label for="star3" class="star">&#9733;</label>
+        <label for="star4" class="star">&#9733;</label>
+        <label for="star5" class="star white-star">&#9733;</label>
+        <div id="rating-result">Valoración: 4,5</div>
     </div>
-    
-    <div class="producto">
-        <img src="200500.png" alt="Producto 3">
-        <h3>19,50$</h3>
-        <a href="http://t.me/happykondaa" class="btn-comprar">Comprar</a>
-        <a href="#" class="btn-comprar" onclick="mostrarInformacion('200-500[Acceso no completo] ✦ Cuenta Galaxy - Epic Games ✦Cuenta sin acceso completoEntrega instantánea con correo electrónico y contraseña de la cuenta de Epic GamesAspectos aleatorios en la cuenta (Galaxy Guaranteed)Cuenta de trabajo garantizadaOportunidad de obtener aspectos OG adicionales')">Información</a>
-        <div class="valoracion">
-            <label for="star1" class="star">&#9733;</label>
-            <label for="star2" class="star">&#9733;</label>
-            <label for="star3" class="star">&#9733;</label>
-            <label for="star4" class="star">&#9733;</label>
-            <label for="star5" class="star">&#9733;</label>
-            <div id="rating-result">Valoración: 5,0</div>
-        </div>
+</div>
+
+<div class="producto">
+    <img src="200500.png" alt="Producto 3">
+    <h3>19,50$</h3>
+    <a href="http://t.me/happykondaa" class="btn-comprar">Comprar</a>
+    <a href="#" class="btn-comprar" onclick="mostrarInformacion('200-500[Acceso no completo] ✦ Cuenta Galaxy - Epic Games ✦Cuenta sin acceso completoEntrega instantánea con correo electrónico y contraseña de la cuenta de Epic GamesAspectos aleatorios en la cuenta (Galaxy Guaranteed)Cuenta de trabajo garantizadaOportunidad de obtener aspectos OG adicionales')">Información</a>
+    <div class="valoracion">
+        <label for="star1" class="star">&#9733;</label>
+        <label for="star2" class="star">&#9733;</label>
+        <label for="star3" class="star">&#9733;</label>
+        <label for="star4" class="star">&#9733;</label>
+        <label for="star5" class="star">&#9733;</label>
+        <div id="rating-result">Valoración: 5,0</div>
     </div>
-    
-    <div class="producto">
-        <img src="galaxie.png" alt="Producto 4">
-        <h3>25,50$</h3>
-        <a href="http://t.me/happykondaa" class="btn-comprar">Comprar</a>
-        <a href="#" class="btn-comprar" onclick="mostrarInformacion('Skin galaxy[Acceso no completo] ✦ Cuenta de Psycho Bandit - Epic Games ✦Cuenta sin acceso completoEntrega instantánea con correo electrónico y contraseña de la cuenta de Epic GamesAspectos aleatorios en la cuenta (Psycho Bandit garantizado)Cuenta de trabajo garantizadaOportunidad de obtener aspectos OG adicionales')">Información</a>
-        <div class="valoracion">
-            <label for="star1" class="star">&#9733;</label>
-            <label for="star2" class="star">&#9733;</label>
-            <label for="star3" class="star">&#9733;</label>
-            <label for="star4" class="star">&#9733;</label>
-            <label for="star5" class="star white-star">&#9733;</label>
-            <div id="rating-result">Valoración: 4,8</div>
-        </div>
+</div>
+
+<div class="producto">
+    <img src="galaxie.png" alt="Producto 4">
+    <h3>25,50$</h3>
+    <a href="http://t.me/happykondaa" class="btn-comprar">Comprar</a>
+    <a href="#" class="btn-comprar" onclick="mostrarInformacion('Skin galaxy[Acceso no completo] ✦ Cuenta de Psycho Bandit - Epic Games ✦Cuenta sin acceso completoEntrega instantánea con correo electrónico y contraseña de la cuenta de Epic GamesAspectos aleatorios en la cuenta (Psycho Bandit garantizado)Cuenta de trabajo garantizadaOportunidad de obtener aspectos OG adicionales')">Información</a>
+    <div class="valoracion">
+        <label for="star1" class="star">&#9733;</label>
+        <label for="star2" class="star">&#9733;</label>
+        <label for="star3" class="star">&#9733;</label>
+        <label for="star4" class="star">&#9733;</label>
+        <label for="star5" class="star white-star">&#9733;</label>
+        <div id="rating-result">Valoración: 4,8</div>
     </div>
-    
-    <div class="producto">
-        <img src="pysiko.png" alt="Producto 5">
-        <h3>30,50$</h3>
-        <a href="http://t.me/happykondaa" class="btn-comprar">Comprar</a>
-        <a href="#" class="btn-comprar" onclick="mostrarInformacion('Psycho bandit[Acceso no completo] ✦ Cuenta de Travis Scott - Epic Games ✦Cuenta sin acceso completoEntrega instantánea con correo electrónico y contraseña de la cuenta de Epic GamesAspectos aleatorios en la cuenta (Travis Scott garantizado)Cuenta de trabajo garantizadaOportunidad de obtener aspectos OG adicionales')">Información</a>
-        <div class="valoracion">
-            <label for="star1" class="star">&#9733;</label>
-            <label for="star2" class="star">&#9733;</label>
-            <label for="star3" class="star">&#9733;</label>
-            <label for="star4" class="star">&#9733;</label>
-            <label for="star5" class="star white-star">&#9733;</label>
-            <div id="rating-result">Valoración: 4,6</div>
-        </div>
+</div>
+
+<div class="producto">
+    <img src="pysiko.png" alt="Producto 5">
+    <h3>30,50$</h3>
+    <a href="http://t.me/happykondaa" class="btn-comprar">Comprar</a>
+    <a href="#" class="btn-comprar" onclick="mostrarInformacion('Psycho bandit[Acceso no completo] ✦ Cuenta de Travis Scott - Epic Games ✦Cuenta sin acceso completoEntrega instantánea con correo electrónico y contraseña de la cuenta de Epic GamesAspectos aleatorios en la cuenta (Travis Scott garantizado)Cuenta de trabajo garantizadaOportunidad de obtener aspectos OG adicionales')">Información</a>
+    <div class="valoracion">
+        <label for="star1" class="star">&#9733;</label>
+        <label for="star2" class="star">&#9733;</label>
+        <label for="star3" class="star">&#9733;</label>
+        <label for="star4" class="star">&#9733;</label>
+        <label for="star5" class="star white-star">&#9733;</label>
+        <div id="rating-result">Valoración: 4,6</div>
     </div>
-    
-    <div class="producto">
-        <img src="traviste.png" alt="Producto 6">
-        <h3>19,00$</h3>
-        <a href="http://t.me/happykondaa" class="btn-comprar">Comprar</a>
-        <a href="#" class="btn-comprar" onclick="mostrarInformacion('Travis scott[Acceso no completo] ✦ Cuenta Ikonik - Epic Games ✦Cuenta sin acceso completoEntrega instantánea con correo electrónico y contraseña de la cuenta de Epic GamesAspectos aleatorios en la cuenta (garantía de Ikonik)Cuenta de trabajo garantizadaOportunidad de obtener aspectos OG adicionales')">Información</a>
-        <div class="valoracion">
-            <label for="star1" class="star">&#9733;</label>
-            <label for="star2" class="star">&#9733;</label>
-            <label for="star3" class="star">&#9733;</label>
-            <label for="star4" class="star">&#9733;</label>
-            <label for="star5" class="star">&#9733;</label>
-            <div id="rating-result">Valoración: 5,0</div>
-        </div>
+</div>
+
+<div class="producto">
+    <img src="traviste.png" alt="Producto 6">
+    <h3>19,00$</h3>
+    <a href="http://t.me/happykondaa" class="btn-comprar">Comprar</a>
+    <a href="#" class="btn-comprar" onclick="mostrarInformacion('Travis scott[Acceso no completo] ✦ Cuenta Ikonik - Epic Games ✦Cuenta sin acceso completoEntrega instantánea con correo electrónico y contraseña de la cuenta de Epic GamesAspectos aleatorios en la cuenta (garantía de Ikonik)Cuenta de trabajo garantizadaOportunidad de obtener aspectos OG adicionales')">Información</a>
+    <div class="valoracion">
+        <label for="star1" class="star">&#9733;</label>
+        <label for="star2" class="star">&#9733;</label>
+        <label for="star3" class="star">&#9733;</label>
+        <label for="star4" class="star">&#9733;</label>
+        <label for="star5" class="star">&#9733;</label>
+        <div id="rating-result">Valoración: 5,0</div>
     </div>
-    
-    <div class="producto">
-        <img src="ikonik.png" alt="Producto 7">
-        <h3>45,50$</h3>
-        <a href="http://t.me/happykondaa" class="btn-comprar">Comprar</a>
-        <a href="#" class="btn-comprar" onclick="mostrarInformacion('Ikonik[Acceso no completo] ✦ Cuenta Vbucks - Epic Games ✦Cuenta sin acceso completoEntrega instantánea con correo electrónico y contraseña de la cuenta de Epic GamesAspectos aleatorios en la cuenta (1k Vbucks garantizados)Cuenta de trabajo garantizadaOportunidad de obtener aspectos OG adicionales')">Información</a>
-        <div class="valoracion">
-            <label for="star1" class="star">&#9733;</label>
-            <label for="star2" class="star">&#9733;</label>
-            <label for="star3" class="star">&#9733;</label>
-            <label for="star4" class="star">&#9733;</label>
-            <label for="star5" class="star">&#9733;</label>
-            <div id="rating-result">Valoración: 4,9</div>
-        </div>
+</div>
+
+<div class="producto">
+    <img src="ikonik.png" alt="Producto 7">
+    <h3>45,50$</h3>
+    <a href="http://t.me/happykondaa" class="btn-comprar">Comprar</a>
+    <a href="#" class="btn-comprar" onclick="mostrarInformacion('Ikonik[Acceso no completo] ✦ Cuenta Vbucks - Epic Games ✦Cuenta sin acceso completoEntrega instantánea con correo electrónico y contraseña de la cuenta de Epic GamesAspectos aleatorios en la cuenta (1k Vbucks garantizados)Cuenta de trabajo garantizadaOportunidad de obtener aspectos OG adicionales')">Información</a>
+    <div class="valoracion">
+        <label for="star1" class="star">&#9733;</label>
+        <label for="star2" class="star">&#9733;</label>
+        <label for="star3" class="star">&#9733;</label>
+        <label for="star4" class="star">&#9733;</label>
+        <label for="star5" class="star">&#9733;</label>
+        <div id="rating-result">Valoración: 4,9</div>
     </div>
-    
-    <div class="producto">
-        <img src="pavos.png" alt="Producto 8">
-        <h3>5,00$</h3>
-        <a href="http://t.me/happykondaa" class="btn-comprar">Comprar</a>
-        <a href="#" class="btn-comprar" onclick="mostrarInformacion('1k-2k pavos[Acceso no completo] ✦ Cuenta Glow Skin - Epic Games ✦Cuenta sin acceso completoEntrega instantánea con correo electrónico y contraseña de la cuenta de Epic GamesAspectos aleatorios en la cuenta (garantizados)Cuenta de trabajo garantizadaOportunidad de obtener aspectos OG adicionales')">Información</a>
-        <div class="valoracion">
-            <label for="star1" class="star">&#9733;</label>
-            <label for="star2" class="star">&#9733;</label>
-            <label for="star3" class="star">&#9733;</label>
-            <label for="star4" class="star">&#9733;</label>
-            <label for="star5" class="star white-star">&#9733;</label>
-            <div id="rating-result">Valoración: 4,4</div>
-        </div>
+</div>
+
+<div class="producto">
+    <img src="pavos.png" alt="Producto 8">
+    <h3>5,00$</h3>
+    <a href="http://t.me/happykondaa" class="btn-comprar">Comprar</a>
+    <a href="#" class="btn-comprar" onclick="mostrarInformacion('1k-2k pavos[Acceso no completo] ✦ Cuenta Glow Skin - Epic Games ✦Cuenta sin acceso completoEntrega instantánea con correo electrónico y contraseña de la cuenta de Epic GamesAspectos aleatorios en la cuenta (garantizados)Cuenta de trabajo garantizadaOportunidad de obtener aspectos OG adicionales')">Información</a>
+    <div class="valoracion">
+        <label for="star1" class="star">&#9733;</label>
+        <label for="star2" class="star">&#9733;</label>
+        <label for="star3" class="star">&#9733;</label>
+        <label for="star4" class="star">&#9733;</label>
+        <label for="star5" class="star white-star">&#9733;</label>
+        <div id="rating-result">Valoración: 4,4</div>
     </div>
-    
-    <div class="producto">
-        <img src="glow.png" alt="Producto 9">
-        <h3>12,00$</h3>
-        <a href="http://t.me/happykondaa" class="btn-comprar">Comprar</a>
-        <a href="#" class="btn-comprar" onclick="mostrarInformacion('[Acceso no completo] ✦ Cuenta Glow Skin - Epic Games ✦Cuenta sin acceso completoEntrega instantánea con correo electrónico y contraseña de la cuenta de Epic GamesAspectos aleatorios en la cuenta (garantizados)Cuenta de trabajo garantizadaOportunidad de obtener aspectos OG adicionales')">Información</a>
-        <div class="valoracion">
-            <label for="star1" class="star">&#9733;</label>
-            <label for="star2" class="star">&#9733;</label>
-            <label for="star3" class="star">&#9733;</label>
-            <label for="star4" class="star">&#9733;</label>
-            <label for="star5" class="star white-star">&#9733;</label>
-            <div id="rating-result">Valoración: 4,6</div>
-        </div>
+</div>
+
+<div class="producto">
+    <img src="glow.png" alt="Producto 9">
+    <h3>12,00$</h3>
+    <a href="http://t.me/happykondaa" class="btn-comprar">Comprar</a>
+    <a href="#" class="btn-comprar" onclick="mostrarInformacion('[Acceso no completo] ✦ Cuenta Glow Skin - Epic Games ✦Cuenta sin acceso completoEntrega instantánea con correo electrónico y contraseña de la cuenta de Epic GamesAspectos aleatorios en la cuenta (garantizados)Cuenta de trabajo garantizadaOportunidad de obtener aspectos OG adicionales')">Información</a>
+    <div class="valoracion">
+        <label for="star1" class="star">&#9733;</label>
+        <label for="star2" class="star">&#9733;</label>
+        <label for="star3" class="star">&#9733;</label>
+        <label for="star4" class="star">&#9733;</label>
+        <label for="star5" class="star white-star">&#9733;</label>
+        <div id="rating-result">Valoración: 4,6</div>
+    </div>
 
     <!-- Código JavaScript -->
     <script>
