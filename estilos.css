@@ -301,3 +301,8 @@ body::before {
     background-color: #444;
     z-index: 5; /* Asegura que no quede oculta */
 }
+
+.barra-notificacion {
+    background-color: #1e90ff; /* Azul brillante */
+    color: #fff; /* Texto en blanco para contraste */
+}
