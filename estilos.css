@@ -306,3 +306,45 @@ body::before {
     background-color: #1e90ff; /* Azul brillante */
     color: #fff; /* Texto en blanco para contraste */
 }
+
+.navbar a[href*="inicio"],
+.navbar a[href*="warzone"] {
+    background-color: #1e90ff; /* Azul brillante */
+    color: #fff; /* Texto blanco */
+    padding: 10px 15px; /* Espaciado para que parezca botón */
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #1a75d1; /* Borde azul más oscuro */
+}
+
+/* Efecto al pasar el mouse */
+.navbar a[href*="inicio"]:hover,
+.navbar a[href*="warzone"]:hover {
+    background-color: #0d6efd; /* Azul más intenso */
+    border-color: #084298; /* Borde más oscuro */
+    box-shadow: 0 0 10px #1e90ff; /* Efecto de resplandor */
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+}
+
+.navbar-brand {
+    background-color: #1e90ff; /* Azul brillante */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado para que parezca botón */
+    border-radius: 8px; /* Bordes redondeados */
+    font-weight: bold;
+    font-size: 24px; /* Tamaño más grande */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    transition: all 0.3s ease-in-out;
+    border: 3px solid #1a75d1; /* Borde azul más oscuro */
+    box-shadow: 0 0 15px rgba(30, 144, 255, 0.8); /* Resplandor azul */
+}
+
+/* Efecto al pasar el mouse */
+.navbar-brand:hover {
+    background-color: #0d6efd; /* Azul más intenso */
+    border-color: #084298; /* Borde más oscuro */
+    box-shadow: 0 0 20px #1e90ff; /* Efecto de resplandor más fuerte */
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+}
+
